@@ -7,7 +7,7 @@ for j in range(5):
         left(90)
         fd(100)
         lt(90)
-        fillcolor(colors[j])
+    fillcolor(colors[j])
     fd(50)
     end_fill()
 done()
