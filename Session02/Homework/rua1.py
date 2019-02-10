@@ -1,5 +1,4 @@
 from turtle import *
-speed(0)
 color("red")
 for i in range(4):
     for i in range (2):

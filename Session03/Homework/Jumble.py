@@ -12,7 +12,6 @@ print(
 """
 )
 
-
 play=input("Bạn có muốn chơi không? (có hoặc không) ")
 while play=="có":
     word = random.choice(WORDS)

@@ -1,5 +1,4 @@
-from turtle import*
-speed(999)
+from turtle import *
 color("blue")
 left(60)
 forward(200)
