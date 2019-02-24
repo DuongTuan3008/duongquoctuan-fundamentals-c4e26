@@ -9,13 +9,13 @@ conn = urlopen(url)
 # 2. Download content
 raw_data= conn.read()
 page_content = raw_data.decode("utf8")
-with open("dantri.html","wb") as f:
+with open("itunes.html","wb") as f:
     f.write(raw_data)
 
 
 # 3.Find ROI
 soup = BeautifulSoup(page_content,"html.parser")
-ul = soup.find("ul","")
+ul = soup.find("div, ")
 
 # 4. Extract ROI
 li_list = ul.find_all("li")
