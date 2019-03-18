@@ -34,7 +34,7 @@ def update_by_id(id, name, price):
     }
     food_collection.find_one_and_update(query, updater)
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # delete_by_id("5c85f3cbaf1137320c9d3871")
     # f = get_by_id("5c85f37caf11372998fd5c3a")
     # # for food in get({"_id":ObjectId("5c85f37caf11372998fd5c3a")}):
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # add_food("Nem Cua Bể", 15000)
     # add_food("Cháo Lòng", 30000)
     # add_food("Bún Riêu Cua", 25000)
-    query = {"_id": ObjectId("5c8a5c9caf11373be84d6da1")}
-    updater = {"$set": { "price": 40000 } } # $inc, $dec, $set, $unset
-    # food_collection.find_one_and_update(query, updater)
-    print(*get({}), sep="\n")
+    # query = {"_id": ObjectId("5c8a5c9caf11373be84d6da1")}
+    # updater = {"$set": { "price": 40000 } } # $inc, $dec, $set, $unset
+    # # food_collection.find_one_and_update(query, updater)
+    # print(*get({}), sep="\n")

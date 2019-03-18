@@ -33,14 +33,14 @@ def add_food():
         return render_template("food_form.html")
     elif request.method == "POST":
         form = request.form
-        n = form["name"]
-        p = form["price"]
+        name = form["name"]
+        price = form["price"]
         new_item = {
-            "name": n,
-            "price": p,
+            "name": name,
+            "price": price,
         }
         items.append(new_item)
-        return n + " da duoc them vao"
+        return name + " added"
 
 if __name__ =="__main__":
     app.run(debug=True)
