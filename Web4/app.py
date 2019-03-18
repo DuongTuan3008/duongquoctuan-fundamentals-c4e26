@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
-from db import db
+from db import *
 import food
 app = Flask(__name__)
 
@@ -45,10 +45,10 @@ def add_user():
         user_collection.insert_one(new_user)
         return "New user added"
 
-@app.route("/user", methods=["GET","POST"])
+@app.route("/users", methods=["GET","POST"])
 def user():
     if request.method=="GET":
-        return render_template("user.html")
+        return render_template("users.html")
     elif request.method=="POST":
         form=request.form
         us=form["username"]
